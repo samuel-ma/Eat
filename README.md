@@ -37,7 +37,7 @@ To run the React Bill Splitter locally on your machine, follow these steps:
 
 <ol>
   <li>
-    Clone the repository: git clone https://github.com/your-username/react-bill-splitter.git
+    Clone the repository: git clone https://github.com/samuel-ma/Eat
   </li>
   <br/>
 
