@@ -1,3 +1,5 @@
+![es](https://github.com/samuel-ma/Eat/assets/82509653/87e848d9-64c2-4a73-a507-08d434bf0726)
+
 # React Bill Splitter
 The React Bill Splitter is a simple web application built with React that helps you calculate the bill for two people after a meal at a restaurant. With this application, you can effortlessly divide the total amount, including tax and tip, between two individuals, ensuring a fair and accurate split.
 <br/>
