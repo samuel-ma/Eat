@@ -103,6 +103,10 @@ p {
     margin: 10px;
 }
 
+.owe {
+    color: grey;
+}
+
 .container2 {
     /* display: none; */
     width: 100%;
