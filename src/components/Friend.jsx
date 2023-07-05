@@ -18,8 +18,10 @@ const Friend = ({ name, img, balance }) => {
                     <h3>{name}</h3>
                     {
                         (balance < 0)
-                            ? <p className='owe'>{name} owes you {balance * -1}</p>
-                            : <p className='owe'>You owe {name} {balance}$</p>
+                            ? <p className='owe'>{name} owes you {balance * -1}$</p>
+                            : (balance == 0 || balance == null)
+                                ? <p className='owe'>You and {name} are even</p>
+                                : <p className='owe'>You owe {name} {balance}$</p>
                     }
                 </div>
             </div>

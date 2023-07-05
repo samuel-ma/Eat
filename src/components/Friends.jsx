@@ -17,7 +17,7 @@ const Friends = ({ friends }) => {
 
             {
                 (open)
-                    ? <Add />
+                    ? <Add friends={friends}/>
                     : null
             }
 

@@ -1,11 +1,18 @@
+import { useState } from "react"
 
-const Add = () => {
+const Add = ({ friends }) => {
 
-    const addNewPerson = () => {
+    const [name, setName] = useState("John Adams...");
+
+    const addNewPerson = (e) => {
+
+        e.preventDefault()
+        setName(e.target.value)
+
         friends.push({
             id: Math.random() * 10,
             balance: 0,
-            name: 'random',
+            name: "random",
             img: "random"
         })
     }
@@ -15,12 +22,12 @@ const Add = () => {
             <div className='add1'>
                 <div className='addnew'>
                     <p>👥 Friend Name: </p>
-                    <input type="text" placeholder='John Adams...' />
+                    <input type="text" placeholder={name} onChange={name} />
                 </div>
 
                 <div className='addnew'>
                     <p>🎨 Image URL: </p>
-                    <input type="text" placeholder='https://www.pexels.com...' />
+                    <input type="text" onSubmit={() => { }} placeholder='https://www.pexels.com...' />
                 </div>
             </div>
 
